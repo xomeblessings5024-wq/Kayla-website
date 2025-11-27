@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>www.ken's entreprise.contact.com</title>
+<body>
+<!--CONTACT-->
+<section id="contact" class="card">
+<h2>Contact Us</h2>
+<form id="contactform">
+<div class="grid">
+<label>Name</label>
+<input type="text"id="name"placeholder="Your name"required/>
+<label>Email</label>
+<input type="email"id="email"placeholder="email"required/>
+<label>Message</label>
+<textarea id="message" rows="4"placeholder="How can we help you?"required></textarea>
+<button type="submit">send Message</button>
+<p id="result"style="color:red;font-size:14px"></p>
+</div>
+</form>
+</section>
+
+<footer>
+<p><span id="year"></span>KEN'S ENTREPRISE LIMITED</p>
+</footer>
+<p>You can even use <u>+256509164847</u> or <u> jamalasaba5024@gmail.com</u><br>We are located in Makindye, end's corner on katende street. and we operate Monday to Sunday, come today and reach your highest never expectations and experience, thank you.</p> 
+<script>
+document.getElementById('year').textContent=new date().getFullyear();
+document.getElementById('contact form').addEventlistener('submit',function(e){e.preventDefault();
+var n=document.getElementById('name').value.trim();
+if(!n)document.getElementById('result').textcontent='Please enter your name.';return}
+document.getElementById('result').textcontent='Thanks,'+n+'-messagr received(demo).';this.reset();
+};
+</script>
+</body>
+</html>
